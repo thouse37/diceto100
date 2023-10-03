@@ -1,8 +1,8 @@
 "use strict";
-// Handles the Modial/Overlay Instructions
+// Handles the Modial/Overlay Rules
 const overlay = $("div.overlay");
 const modalButton = $(".close-modal");
-const instructions = $(".btn--instructions");
+const rules = $(".btn--rules");
 
 overlay.on("click", function () {
   $(".overlay").addClass("hidden");
@@ -21,7 +21,7 @@ $(document).keydown(function (e) {
   }
 });
 
-instructions.on("click", function () {
+rules.on("click", function () {
   overlay.toggleClass("hidden");
   $(".modal").toggleClass("hidden");
 });
